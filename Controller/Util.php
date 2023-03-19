@@ -191,6 +191,11 @@ class Util {
         return $Medecin;
     }
 
+    /**
+     * 
+     * @param type $Id
+     * @return \Patient
+     */
     public function getPatientByID($Id){
         $Patient = NULL;
         
@@ -231,6 +236,11 @@ class Util {
         return $Patient;
     }
 
+    /**
+     * 
+     * @param type $Id
+     * @return \Liste rendez-vous
+     */
     public function getRendezVousAVenirByIDMedecin($Id){
         $Rendez_Vous = NULL;
         
@@ -251,6 +261,11 @@ class Util {
         return $Rendez_Vous;
     }
 
+    /**
+     * 
+     * @param type $Id
+     * @return \Liste rendez-vous
+     */
     public function getRendezVousPassesByIDMedecin($Id){
         $Rendez_Vous = NULL;
         
@@ -271,6 +286,10 @@ class Util {
         return $Rendez_Vous;
     }
     
+    /**
+     * 
+     * @return \Rendez-vous
+     */
     public function getRendezVous(){
         $Rendez_Vous = NULL;
         
@@ -291,6 +310,11 @@ class Util {
         return $Rendez_Vous;
     }
 
+    /**
+     * 
+     * @param type $Id
+     * @return \Liste patients
+     */
     public function getPatientByIDMedecin($Id){
         $Patients = NULL;
         
@@ -315,6 +339,11 @@ class Util {
         return $Patients;
     }
 
+    /**
+     * 
+     * @param type $Id
+     * @return \Liste consultations
+     */
     public function getInfoConsultationByIDMedecin($Id){
         $Patients = NULL;
         
@@ -341,6 +370,10 @@ class Util {
         return $Patients;
     }
 
+    /**
+     * 
+     * @return \Liste patients
+     */
     public function getPatients(){
         $Patients = NULL;
         
