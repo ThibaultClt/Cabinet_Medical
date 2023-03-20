@@ -5,7 +5,7 @@
 /**
  * Description of Medecin
  *
- * @author Thibault
+ * @author Thibault & Matthieu
  */
 class Medecin {
     

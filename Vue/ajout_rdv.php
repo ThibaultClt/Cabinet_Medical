@@ -1,3 +1,6 @@
+<!-- Projet cabinet médical -->
+<!-- @author Thibault & Matthieu & Matthieu -->
+
 <?php
 
    require('../Controller/Util.php');

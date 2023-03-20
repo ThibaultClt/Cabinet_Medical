@@ -3,7 +3,7 @@
 /**
  * Description of User
  *
- * @author Thibault
+ * @author Thibault & Matthieu
  */
 
 

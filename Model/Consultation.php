@@ -5,7 +5,7 @@
 /**
  * Description of Consultation
  *
- * @author Thibault
+ * @author Thibault & Matthieu
  */
 class Consultation {
     

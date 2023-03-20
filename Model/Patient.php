@@ -5,7 +5,7 @@
 /**
  * Description of Patient
  *
- * @author Thibault
+ * @author Thibault & Matthieu
  */
 class Patient {
     /**

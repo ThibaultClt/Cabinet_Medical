@@ -3,7 +3,7 @@
 /**
  * Description of Util
  *
- * @author Thibault
+ * @author Thibault & Matthieu & Matthieu
  */
 
 include '../Model/Utilisateur.php';

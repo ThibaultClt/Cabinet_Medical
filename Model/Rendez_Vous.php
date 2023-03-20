@@ -5,7 +5,7 @@
 /**
  * Description of Rendez-vous
  *
- * @author Thibault
+ * @author Thibault & Matthieu
  */
 class Rendez_Vous {
     

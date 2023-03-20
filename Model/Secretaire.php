@@ -5,7 +5,7 @@
 /**
  * Description of Secretaire
  *
- * @author Thibault
+ * @author Thibault & Matthieu
  */
 class Secretaire {
     
