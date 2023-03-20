@@ -244,8 +244,13 @@ class Util {
     public function getRendezVousAVenirByIDMedecin($Id){
         $Rendez_Vous = NULL;
         
-        $Query = "SELECT * FROM rendez_vous WHERE (Id_Medecin='".$Id."') AND (DATEDIFF(Date_Rendez_Vous, DATE (NOW())) >= 0) ORDER BY Date_Rendez_Vous ASC";
-        
+        $Query = "SELECT r.Id_Rendez_Vous, r.Date_Rendez_Vous, r.Salle_Rendez_Vous, 
+          p.Nom_Patient, p.Prenom_Patient 
+          FROM rendez_vous r 
+          JOIN patient p ON r.Id_Patient = p.Id_Patient
+          WHERE (Id_Medecin='".$Id."') AND (DATEDIFF(Date_Rendez_Vous, DATE (NOW())) >= 0) 
+          ORDER BY Date_Rendez_Vous ASC";
+
         $this->dbConnection();
         
         if ($this->mysqli->connect_error) {
@@ -269,8 +274,13 @@ class Util {
     public function getRendezVousPassesByIDMedecin($Id){
         $Rendez_Vous = NULL;
         
-        $Query = "SELECT * FROM rendez_vous WHERE (Id_Medecin='".$Id."') AND (DATEDIFF(Date_Rendez_Vous, DATE (NOW())) <= 0) ORDER BY Date_Rendez_Vous DESC";
-        
+        $Query = "SELECT r.Id_Rendez_Vous, r.Date_Rendez_Vous, r.Salle_Rendez_Vous, 
+          p.Nom_Patient, p.Prenom_Patient 
+          FROM rendez_vous r 
+          JOIN patient p ON r.Id_Patient = p.Id_Patient
+          WHERE (Id_Medecin='".$Id."') AND (DATEDIFF(Date_Rendez_Vous, DATE (NOW())) >= 0) 
+          ORDER BY Date_Rendez_Vous ASC";
+
         $this->dbConnection();
         
         if ($this->mysqli->connect_error) {
@@ -293,7 +303,12 @@ class Util {
     public function getRendezVous(){
         $Rendez_Vous = NULL;
         
-        $Query = "SELECT * FROM rendez_vous";
+        $Query = "SELECT r.Id_Rendez_Vous, r.Date_Rendez_Vous, r.Salle_Rendez_Vous,
+        m.Nom_Medecin, m.Prenom_Medecin, 
+        p.Nom_Patient, p.Prenom_Patient 
+        FROM rendez_vous r 
+        JOIN medecin m ON r.Id_Medecin = m.Id_Medecin 
+        JOIN patient p ON r.Id_Patient = p.Id_Patient";
         
         $this->dbConnection();
         

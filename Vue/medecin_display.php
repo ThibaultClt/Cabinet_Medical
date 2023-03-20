@@ -74,7 +74,7 @@
                                                 <th scope="col">Id Rendez-vous</th>
                                                 <th scope="col">Date Rendez-vous</th>
                                                 <th scope="col">Salle Rendez-vous</th>
-                                                <th scope="col">Id Patient</th>
+                                                <th scope="col">Patient</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -83,7 +83,7 @@
                                                     <th scope="row"><?php echo $row["Id_Rendez_Vous"] ?></td>
                                                     <td class="text-center"><?php echo $row["Date_Rendez_Vous"] ?></td>
                                                     <td class="text-center"><?php echo $row["Salle_Rendez_Vous"] ?></td>
-                                                    <td class="text-center"><?php echo $row["Id_Patient"] ?></td>
+                                                    <td class="text-center"><?php echo $row["Nom_Patient"] . " " . $row["Prenom_Patient"] ?></td>
                                                 </tr>
                                             <?php endwhile; ?>
                                         </tbody>
@@ -138,7 +138,7 @@
                                                     <th scope="row"><?php echo $row["Id_Rendez_Vous"] ?></td>
                                                     <td class="text-center"><?php echo $row["Date_Rendez_Vous"] ?></td>
                                                     <td class="text-center"><?php echo $row["Salle_Rendez_Vous"] ?></td>
-                                                    <td class="text-center"><?php echo $row["Id_Patient"] ?></td>
+                                                    <td class="text-center"><?php echo $row["Nom_Patient"] . " " . $row["Prenom_Patient"] ?></td>
                                                 </tr>
                                             <?php endwhile; ?>
                                         </tbody>

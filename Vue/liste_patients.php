@@ -65,7 +65,7 @@
                             <div class="Left-body-head">
                                 Liste des patients
                             </div>
-                            <div class="infos-2">
+                            <div>
                                 <center>
                                     <table class="table table-striped table-bordered align-middle">
                                         <thead >
