@@ -65,7 +65,7 @@
                             <div class="Left-body-head">
                                 Liste des rendez-vous à venir 
                             </div>
-                            <div class="infos-2">
+                            <div class>
                                 <center>
                                     <table class="table table-striped table-bordered align-middle">
                                         <thead >
